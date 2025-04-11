@@ -21,7 +21,7 @@ public class LoanController {
 
     public void run() {
         LoanData data = view.getLoanInput();
-
+        //final validation
         String validationError = InputValidator.validate(data);
         if (validationError != null) {
             view.showError(validationError);
