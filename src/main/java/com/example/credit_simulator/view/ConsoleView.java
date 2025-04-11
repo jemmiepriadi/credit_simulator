@@ -58,7 +58,7 @@ public class ConsoleView {
 
         while (true) {
             try {
-                System.out.print("Jumlah Pinjaman: ");
+                System.out.print("Harga Kendaraan: ");
                 double amount = Double.parseDouble(scanner.nextLine());
                 if (amount > 0) {
                     data.setLoanAmount(amount);
