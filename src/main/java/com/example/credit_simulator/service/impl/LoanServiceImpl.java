@@ -4,7 +4,10 @@ import com.example.credit_simulator.model.LoanData;
 import com.example.credit_simulator.model.LoanResult;
 import com.example.credit_simulator.service.LoanService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -12,6 +15,10 @@ import java.util.Map;
 @Service
 @Slf4j
 public class LoanServiceImpl implements LoanService {
+
+    @Autowired
+    private WebClient webClient;
+
     public Map<Integer, LoanResult> calculateInstallments(LoanData data) {
         Map<Integer, LoanResult> results = new LinkedHashMap<>();
         double baseInterest = getBaseInterest(data.getVehicleType());
@@ -46,6 +53,14 @@ public class LoanServiceImpl implements LoanService {
         }
 
         return results;
+    }
+
+    @Override
+    public Mono<String> fetchLoanData() {
+        return webClient.get()
+                .uri("/v3/621e2742-309f-493e-b9d4-ff168282b69e")
+                .retrieve()
+                .bodyToMono(String.class);
     }
 
     private double getBaseInterest(String type) {

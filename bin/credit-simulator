@@ -1,0 +1,10 @@
+#!/bin/bash
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+JAR_PATH="$SCRIPT_DIR/../target/credit-simulator.jar"
+
+if [ ! -f "$JAR_PATH" ]; then
+  echo "JAR not found at $JAR_PATH. Run 'mvn clean package' first."
+  exit 1
+fi
+
+java -jar "$JAR_PATH" "$@"

@@ -58,9 +58,13 @@ public class ConsoleView {
 
         while (true) {
             try {
-                System.out.print("Harga Kendaraan: ");
+                System.out.print("Harga Kendaraan (di bawah <= 1 Milyar): ");
                 double amount = Double.parseDouble(scanner.nextLine());
                 if (amount > 0) {
+                    if(amount>1000000000){
+                        System.out.println( "Jumlah pinjaman tidak boleh lebih dari 1 miliar.");
+                        continue;
+                    }
                     data.setLoanAmount(amount);
                     break;
                 } else {
