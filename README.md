@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/e044cac3-9404-42c2-927c-551d2e33ac34)# Credit Simulator
-
 A simple Java console application that simulates vehicle loan calculations based on user input.
 
 ## Features
