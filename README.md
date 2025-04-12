@@ -17,6 +17,9 @@ A simple Java console application that simulates vehicle loan calculations based
 - **Docker**
 - **GitHub Actions** or **GitLab CI** for CI/CD
 
+## Framework used
+- **Java Spring Boot 3.4.4**
+
 ## Running the Application
 
 ### 1. Run Locally
