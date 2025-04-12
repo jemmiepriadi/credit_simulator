@@ -77,11 +77,26 @@ You can run the application via docker without needing to pull the code
   You can change 'credit-simulator-container' to any name you want
   This should be running on port 8080 by default, you can override it via -p command
 
+
+
 **After running it, you or the user will be prompted to input into the terminal**  
 You can refer to the image below
 ![image](https://github.com/user-attachments/assets/c0447874-5d64-4d33-bdbe-e84f9b7c1de5)
 **After inputting the data needed, the system will automatically calculate and show the results below:**
 ![image](https://github.com/user-attachments/assets/27390866-7946-4dcd-b3c9-ae8cfd228514)
+
+## Testing the application
+**If you are running from docker, the CI/CD would already have tested the application by default**
+
+
+**Otherwise, if you want to try it locally, you can execute the following command:**
+```bash
+mvn test
+```
+**Note** Please ensure you have maven installed before running this command
+
+
+
 
 
 ## Note
@@ -89,4 +104,4 @@ You can refer to the image below
 ![image](https://github.com/user-attachments/assets/c49bba1f-90d5-4adf-8c2c-41378d5475e1)
 
 
-**As also currently there is no txt file attached, the app will only be able to be executed by console/terminal/shell**
+**As also currently there is no txt file attached, the app will only be able to be executed by console/terminal/shell and (Assuming the user choose to run the application with the bin script)./bin/credit_simulator (without argument)t**
