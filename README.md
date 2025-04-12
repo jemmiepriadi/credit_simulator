@@ -1,4 +1,4 @@
-#Credit Simulator Console Application
+# Credit Simulator Console Application
 
 A simple Java console application that simulates vehicle loan calculations based on user input.
 
