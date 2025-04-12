@@ -42,7 +42,7 @@ jobs:
         with:
             platforms: linux/amd64,linux/arm64
             push: true
-            tags: user/app:latest
+            tags: ${{ secrets.DOCKER_USERNAME }}/credit-simulator:latest
 
 
       - name: Login to Docker Hub
