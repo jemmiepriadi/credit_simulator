@@ -22,7 +22,6 @@ public class LoanController {
     }
 
     public void run() {
-        System.out.println("testing CI/CD");
         while(true) {
             LoanData data = view.getLoanInput();
             //final validation
