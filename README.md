@@ -10,7 +10,7 @@ A simple Java console application that simulates vehicle loan calculations based
 - Docker support for ease of containerized execution.
 - CI/CD setup with GitHub Actions for automatic build and deployment to Docker Hub.
 
-## Requirements
+## Tools Used
 
 - **Java 17** or higher (Temurin).
 - **Maven 3.x** for building the application.
