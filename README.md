@@ -55,7 +55,7 @@ This makes the script inside the bin to be executable on the system, so you can 
 **Note**
 if the application does not run due to being unable to find the jar file, run the command:
 ```bash
-mvn clean package``
+mvn clean package
 ```
 **Ensure you have maven installed on your system**
 
