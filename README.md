@@ -104,4 +104,6 @@ mvn test
 ![image](https://github.com/user-attachments/assets/c49bba1f-90d5-4adf-8c2c-41378d5475e1)
 
 
-**As also currently there is no txt file attached, the app will only be able to be executed by console/terminal/shell and (Assuming the user choose to run the application with the bin script)./bin/credit_simulator (without argument)t**
+**As also currently there is no txt file attached, the app will only be able to be executed by console/terminal/shell and**
+
+**(Assuming the user choose to run the application with the bin script)./bin/credit_simulator (without argument)**
