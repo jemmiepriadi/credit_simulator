@@ -46,11 +46,11 @@ To run the application locally, there are multiple options:
 **2, On MacOS or Linux environment**
 - **Execute this command:**
 ```bash
-chmod +x run.sh
+chmod +x bin/credit-simulator
 ```
 This makes the script inside the bin to be executable on the system, so you can test it locally with:
 ```bash
-./bin/credit_simulator
+./bin/credit-simulator
 ```
 **Note**
 if the application does not run due to being unable to find the jar file, run the command:
